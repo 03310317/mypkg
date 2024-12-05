@@ -13,7 +13,7 @@ class Talker(Node):
         msg = Int16()
         msg.data = self.n
         self.pub.publish(msg)
-        self.n += 1
+        self.n += 10
 
 def main():
     rclpy.init()
